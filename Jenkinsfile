@@ -40,7 +40,7 @@ pipeline {
 			steps {
 
 				script {
-					sh "docker build -t $DOCKER_IMAGE_NAME"
+					docker.build("${DOCKER_IMAGE_NAME}", '.')
 				}
 
 			}
