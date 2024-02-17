@@ -4,7 +4,7 @@ pipeline {
 
 	environment {
 		DOCKER_IMAGE_NAME = 'my-java-app'
-		GITHUB_REPO_URL = 'https://github.com/hemantkumarc/SPE-MiniProject.git'
+		GITHUB_REPO_URL = 'https://github.com/abhisheksharma402/SPE_Test.git'
 	}
 
 	stages {
@@ -54,8 +54,8 @@ pipeline {
 
 					docker.withRegistry('', 'dockerhub-credentials') {
 
-						sh "docker image tag calculator hemantkumarcpersonal/calculator:latest"
-						sh "docker push hemantkumarcpersonal/calculator:latest"
+						sh "docker image tag calculator abhisheksharma402/my-java-app:latest"
+						sh "docker push abhisheksharma402/my-java-app:latest"
 
 					}
 				}
