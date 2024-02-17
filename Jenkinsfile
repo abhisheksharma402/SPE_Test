@@ -23,7 +23,7 @@ pipeline {
 		stage('Build Code')
 		{
 			steps {
-				sh "javac calculator.java"
+				sh "javac SPE_Project.java"
 			}
 		}
 
