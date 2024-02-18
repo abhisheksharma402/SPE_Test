@@ -20,4 +20,4 @@
         state: started
 
     - name: Running Container
-      shell: docker run -it -d --name abhisheksharma402/my-java-app
+      shell: docker run abhisheksharma402/my-java-app
